@@ -1,0 +1,32 @@
+.hello{
+  background: red;
+  font-size: 100px;
+}
+body{
+  display: flex;
+  align-content: center;
+}
+div{
+  width: 100px;
+  height: 100px;
+  &:nth-child(1){
+    width: 200px;
+    background: red;
+  }
+  &:nth-child(2){
+    width: 300px;
+    background: yellow url('../img/s6-bottom.png') no-repeat center;
+  }
+  &:nth-child(3){
+    width: 400px;
+    background: blue;
+  }
+  &:nth-child(4){
+    width: 500px;
+    background: green;
+  }
+  &:nth-child(5){
+    width: 600px;
+    background: black;
+  }
+}
