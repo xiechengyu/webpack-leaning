@@ -1,0 +1,35 @@
+@import "./base.less";
+.demo {
+  font-size: 24px;
+  color: #333;
+  transform: rotate(-15deg);
+  p {
+    background: lightblue linear-gradient(0, rgb(208, 84, 1), rgb(219, 96, 14));
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    animation: do 1s linear;
+    &::first-letter {
+      font-size: 29px;
+      color: @fontColor;
+    }
+  }
+}
+.bg {
+  background: url(../img/a0f9fd24-815f-448c-b0e7-361cae090efd.jpg);
+}
+@keyframes do {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 40%;
+  }
+}
+.slickItem {
+  width: 100px;
+  height: 100px;
+  display: block;
+  background: rgb(42, 42, 224);
+}
